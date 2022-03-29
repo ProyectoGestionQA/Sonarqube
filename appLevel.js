@@ -259,8 +259,8 @@ function buildBase()
             for(let i = propCount; i--;)
             {
                 const pos = floorBottomCenterPos.add(vec2(randSeeded( floorWidth-1,-floorWidth+1),.7));
-                new Enemy(pos);
-            }
+                let enemy = new Enemy(pos);
+                enemy.create(pos)            }
         }
 
         const oldFloorWidth = floorWidth;
