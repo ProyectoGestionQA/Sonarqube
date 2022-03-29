@@ -35,8 +35,6 @@ engineInit(
 
     gameplayWindowSize = vec2(mainCanvas.width, mainCanvas.height).scale(1/defaultCameraScale);
     updateWindowSize = gameplayWindowSize.add(vec2(30));
-    //debugRect(cameraPos, maxGameplayCameraSize);
-    //debugRect(cameraPos, updateWindowSize);
 
     if (debug)
     {
@@ -46,8 +44,7 @@ engineInit(
 
         if (keyWasPressed(84))
         {
-            //for(let i=30;i--;)
-                new Prop(mousePosWorld);
+            new Prop(mousePosWorld);
         }
 
         if (keyWasPressed(69))
@@ -59,7 +56,6 @@ engineInit(
 
             // test
             e.collideTiles = 1;
-            //e.tileIndex=7;
             e.emitSize = 2;
             e.colorStartA = new Color(1,1,1,1);
             e.colorStartB = new Color(0,1,1,1);
@@ -70,28 +66,15 @@ engineInit(
             e.speed = .3
             e.elasticity = .1
             e.gravityScale = 1;
-            //e.additive = 1;
             e.angle = -PI;
         }
 
         if (mouseWheel) // mouse zoom
             cameraScale = clamp(cameraScale*(1-mouseWheel/10), defaultTileSize.x*16, defaultTileSize.x/16);
-                    
-        //if (keyWasPressed(77))
-        //    playSong([[[,0,219,,,,,1.1,,-.1,-50,-.05,-.01,1],[2,0,84,,,.1,,.7,,,,.5,,6.7,1,.05]],[[[0,-1,1,0,5,0],[1,1,8,8,0,3]]],[0,0,0,0],90]) // music test
 
         if (keyWasPressed(77))
             players[0].pos = mousePosWorld;
 
-        /*if (keyWasPressed(32))
-        {
-            skyParticles && skyParticles.destroy();
-            tileLayer.destroy();
-            tileBackgroundLayer.destroy();
-            tileParallaxLayers.forEach((tileParallaxLayer)=>tileParallaxLayer.destroy());
-            randomizeLevelParams();
-            applyArtToLevel();
-        }*/
         if (keyWasPressed(78))
             nextLevel();
     }
@@ -168,7 +151,6 @@ engineInit(
     gradient.addColorStop(0,levelSkyColor.rgba());
     gradient.addColorStop(1,levelSkyHorizonColor.rgba());
     mainContext.fillStyle = gradient;
-    //mainContext.fillStyle = levelSkyColor.rgba();
     mainContext.fillRect(0,0,mainCanvas.width, mainCanvas.height);
 
     drawStars();
@@ -177,22 +159,12 @@ engineInit(
 ///////////////////////////////////////////////////////////////////////////////
 ()=> // appRenderPost
 {
-    //let minAliveTime = 9;
-    //for(const player of players)
-    //    minAliveTime = min(minAliveTime, player.getAliveTime());
-
-    //const livesPercent = percent(minAliveTime, 5, 4)
-    //const s = 8;
-    //const offset = 100*livesPercent;
-    //mainContext.drawImage(tileImage, 32, 8, s, s, 32, mainCanvas.height-90, s*9, s*9);
     mainContext.textAlign = 'center';
     const p = percent(gameTimer.get(), 8, 10);
 
-    //mainContext.globalCompositeOperation = 'difference';
     mainContext.fillStyle = new Color(0,0,0,p).rgba();
     if (p > 0)
     {
-        //mainContext.fillStyle = (new Color).setHSLA(time/3,1,.5,p).rgba();
         mainContext.font = '1.5in impact';
         mainContext.fillText('SPACE HUGGERS', mainCanvas.width/2, 140);
     }
