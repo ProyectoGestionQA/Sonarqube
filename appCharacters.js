@@ -372,8 +372,10 @@ function alertEnemies(pos, playerPos)
 
 class Enemy extends Character
 {
-    constructor(pos) 
-    { 
+    constructor(pos) {
+        super(pos)
+    }
+    create(pos){
         super(pos);
 
         this.team = team_enemy;

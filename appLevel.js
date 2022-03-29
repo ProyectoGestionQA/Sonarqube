@@ -281,7 +281,13 @@ function buildBase()
         if (raycastHit && abs(checkpointPos.x-pos.x) > 20)
         {
             const pos = raycastHit.add(vec2(0,2));
-            randSeeded() < .7 ? new Enemy(pos) : spawnProps(pos);
+            if(randSeeded() < .7){
+                let enemy = new Enemy(pos);
+                enemy.create(pos)
+                levelEnemyCount++;
+            }else{
+                spawnProps(pos);
+            }
         }
     }
 }
