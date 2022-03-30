@@ -2,5 +2,5 @@ projectKey=ProyectoGestion
 serverUrl=http://localhost:9000
 serverVersion=9.3.0.51899
 dashboardUrl=http://localhost:9000/dashboard?id=ProyectoGestion
-ceTaskId=AX_TieA8bZWzbix6Ddeo
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AX_TieA8bZWzbix6Ddeo
+ceTaskId=AX_TpFQzbZWzbix6Dder
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AX_TpFQzbZWzbix6Dder

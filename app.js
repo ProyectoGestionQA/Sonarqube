@@ -41,7 +41,7 @@ engineInit(
         randSeeded(randSeeded(randSeeded(randSeed = Date.now()))); // set random seed for debug mode stuf
         if (keyWasPressed(81)){
             let enemy = new Enemy(mousePosWorld);
-            enemy.create(pos) 
+            enemy.create() 
         }
    
         if (keyWasPressed(84))

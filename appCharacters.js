@@ -375,8 +375,7 @@ class Enemy extends Character
     constructor(pos) {
         super(pos)
     }
-    create(pos){
-        super(pos);
+    create(){
 
         this.team = team_enemy;
         this.sawPlayerTimer = new Timer;

@@ -260,7 +260,7 @@ function buildBase()
             {
                 const pos = floorBottomCenterPos.add(vec2(randSeeded( floorWidth-1,-floorWidth+1),.7));
                 let enemy = new Enemy(pos);
-                enemy.create(pos)            }
+                enemy.create()            }
         }
 
         const oldFloorWidth = floorWidth;
