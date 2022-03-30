@@ -283,7 +283,7 @@ function buildBase()
             const pos = raycastHit.add(vec2(0,2));
             if(randSeeded() < .7){
                 let enemy = new Enemy(pos);
-                enemy.create(pos)
+                enemy.create()
                 levelEnemyCount++;
             }else{
                 spawnProps(pos);
