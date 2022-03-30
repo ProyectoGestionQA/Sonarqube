@@ -126,7 +126,7 @@ function spawnProps(pos)
             if (randSeeded() < .2)
                 new Prop(pos.add(vec2(propPlaceSize,propPlaceSize*2)));
         }
-        else if (randSeeded() < .2)
+        else
         {
             // 3 column prop stack
             new Prop(pos.add(vec2(0,propPlaceSize*2)));

@@ -1,6 +1,6 @@
-projectKey=ProyectoGestion
+projectKey=Sonarqube1
 serverUrl=http://localhost:9000
 serverVersion=9.3.0.51899
-dashboardUrl=http://localhost:9000/dashboard?id=ProyectoGestion
-ceTaskId=AX_TpFQzbZWzbix6Dder
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AX_TpFQzbZWzbix6Dder
+dashboardUrl=http://localhost:9000/dashboard?id=Sonarqube1
+ceTaskId=AX_dMEmFsnAqtn9vJJWa
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AX_dMEmFsnAqtn9vJJWa
