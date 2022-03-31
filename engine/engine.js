@@ -119,7 +119,7 @@ function engineInit(appInit, appUpdate, appUpdatePost, appRender, appRenderPost)
 
             // update input
             for(let deviceInputData of inputData)
-                deviceInputData.map(k=> k.r = k.p = 0);
+                deviceInputData.forEach(k=> k.r = k.p = 0);
             mouseWheel = 0;
         }
 
