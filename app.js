@@ -24,7 +24,7 @@ engineInit(
 ()=> // appInit 
 {
     resetGame();
-    cameraScale = startCameraScale;
+    const cameraScale = startCameraScale;
 },
 
 ///////////////////////////////////////////////////////////////////////////////
