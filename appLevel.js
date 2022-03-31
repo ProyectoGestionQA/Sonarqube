@@ -487,7 +487,7 @@ function applyArtToLevel()
     }
 }
 
-function nextLevel()
+function nextLevel(playerLives)
 {
     playerLives += 4; // three for beating a level plus 1 for respawning
     levelEnemyCount = 15 + min(level * 30, 300);
