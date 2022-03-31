@@ -229,7 +229,7 @@ function zzfxM(instruments, patterns, sequence, BPM = 125)
                         instrument != (patternChannel[0] || 0) | note | 0;
 
                 // fill buffer with samples for previous beat, most cpu intensive part
-                for (j = 0; j < beatLength && notFirstBeat;
+                for (j = 0; j < beatLength && j<notFirstBeat;
 
                         // fade off attenuation at end of beat if stopping note, prevents clicking
                         j++ > beatLength - 99 && stop ? attenuation += (attenuation < 1) / 99 : 0
