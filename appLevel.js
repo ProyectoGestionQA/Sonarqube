@@ -115,23 +115,24 @@ function buildTerrain(size)
 
 function spawnProps(pos)
 {
+    
     if (abs(checkpointPos.x-pos.x) > 5)
     {
-        new Prop(pos);
+        var prop=new Prop(pos);
         const propPlaceSize = .51;
         if (randSeeded() < .2)
         {
             // 3 triangle prop stack
-            new Prop(pos.add(vec2(propPlaceSize*2,0)));
+            var prop1=new Prop(pos.add(vec2(propPlaceSize*2,0)));
             if (randSeeded() < .2)
-                new Prop(pos.add(vec2(propPlaceSize,propPlaceSize*2)));
+            var prop2=new Prop(pos.add(vec2(propPlaceSize,propPlaceSize*2)));
         }
         else
         {
             // 3 column prop stack
-            new Prop(pos.add(vec2(0,propPlaceSize*2)));
+            var prop3=new Prop(pos.add(vec2(0,propPlaceSize*2)));
             if (randSeeded() < .2)
-                new Prop(pos.add(vec2(0,propPlaceSize*4)));
+            var prop4=new Prop(pos.add(vec2(0,propPlaceSize*4)));
         }
     }
 }
