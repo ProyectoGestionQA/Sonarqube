@@ -127,7 +127,7 @@ engineInit(
         if (!players[i] && (gamepadWasPressed(0, i)||gamepadWasPressed(1, i)))
         {
             ++playerLives;
-            new Player(checkpointPos, i);
+            var p=new Player(checkpointPos, i);
         }
     }
     
