@@ -24,11 +24,8 @@ const lerp          = (p, max=1, min=0)=> min + clamp(p) * (max-min);
 const formatTime    = (t)=>               (t/60|0)+':'+(t%60<10?'0':'')+(t%60|0);
 const isOverlapping = (pA, sA, pB, sB)=>  abs(pA.x - pB.x)*2 < sA.x + sB.x & abs(pA.y - pB.y)*2 < sA.y + sB.y;
 
-
-const crypto = window.crypto || window.msCrypto;
-var array = new Uint32Array(1);
 // random functions
-const rand         = (a=1, b=0)=>              b + (a-b)*crypto.getRandomValues(array);
+const rand         = (a=1, b=0)=>              b + (a-b)*Math.random();
 const randSign     = ()=>                      (rand(2)|0)*2-1;
 const randInCircle = (radius=1, minRadius=0)=> radius > 0 ? randVector(radius * rand(minRadius / radius, 1)**.5) : new Vector2;
 const randVector   = (length=1)=>              new Vector2().setAngle(rand(2*PI), length);
