@@ -42,7 +42,8 @@ const resetGame=()=>
 {
     levelEndTimer.unset();
     gameTimer.set(totalKills = level = 0);
-    nextLevel(playerLives = 6);
+    playerLives = 6;
+    nextLevel();
 }
 
 function buildTerrain(size)
@@ -487,7 +488,7 @@ function applyArtToLevel()
     }
 }
 
-function nextLevel(playerLives)
+function nextLevel()
 {
     playerLives += 4; // three for beating a level plus 1 for respawning
     levelEnemyCount = 15 + min(level * 30, 300);
