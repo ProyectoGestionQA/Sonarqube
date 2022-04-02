@@ -272,7 +272,6 @@ function buildBase()
         previousFloorHeight = floorHeight;
     }
 
-    //checkpointPos = floorBottomCenterPos.copy(); // start player on base for testing
 
     // spawn random enemies and props
     for(let i=20;levelEnemyCount>0&&i--;)
@@ -530,11 +529,9 @@ function nextLevel()
     });
 
     // hack, subtract off warm up time from main game timer
-    //gameTimer.time += warmUpTime;
     levelTimer.set();
 
     // spawn player
     players = [];
     new Player(checkpointPos);
-    //new Enemy(checkpointPos.add(vec2(3))); // test enemy
 }

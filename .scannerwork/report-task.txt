@@ -1,6 +1,6 @@
-projectKey=Sonarqube1
+projectKey=Correcion-2.0
 serverUrl=http://localhost:9000
 serverVersion=9.3.0.51899
-dashboardUrl=http://localhost:9000/dashboard?id=Sonarqube1
-ceTaskId=AX_diSUOsnAqtn9vJJWe
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AX_diSUOsnAqtn9vJJWe
+dashboardUrl=http://localhost:9000/dashboard?id=Correcion-2.0
+ceTaskId=AX_qntEau2vHdbGaaU1M
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AX_qntEau2vHdbGaaU1M

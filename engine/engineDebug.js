@@ -91,11 +91,7 @@ const debugUpdate = ()=>
     {
         debugTakeScreenshot = 1;
     }
-    if (keyWasPressed(54)) // 6
-    {
-        //debugToggleParticleEditor();
-        //debugPhysics = debugParticles = 0;
-    }
+
     if (keyWasPressed(55)) // 7
     {
     }
@@ -247,8 +243,7 @@ const debugRender = ()=>
             mainContext.fillText('3: God Mode', x, y += h);
             mainContext.fillStyle = '#fff';
             mainContext.fillText('5: Save Screenshot', x, y += h);
-            //mainContext.fillStyle = debugParticleEditor ? '#f00' : '#fff';
-            //mainContext.fillText('6: Particle Editor', x, y += h);
+           
         }
         else
         {

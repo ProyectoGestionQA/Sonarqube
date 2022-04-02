@@ -1,6 +1,6 @@
 
 /*
-    LittleJS Utility Classes and Functions
+    LittleJS Utility  lasses and Functions
     - Vector2 - fast, simple, easy vector class
     - Color - holds a rgba color with math functions
     - Timer - tracks time automatically
