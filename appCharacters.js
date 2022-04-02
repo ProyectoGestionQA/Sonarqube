@@ -304,9 +304,8 @@ class Character extends GameObject
                 return;
 
             if (getTileCollisionData(pos.add(vec2(0,1))) // above
-                && !(getTileCollisionData(pos.add(vec2(1,0))) // left
-                    && getTileCollisionData(pos.add(vec2(1,0)))) // right
-            )
+                && !getTileCollisionData(pos.add(vec2(1,0))) // sides
+                )
                 return; // dont collide if something above it and nothing to left or right
 
             // allow standing on top of ladders
